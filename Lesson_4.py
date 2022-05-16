@@ -5,3 +5,5 @@
 s = 'github'
 print(s[:3])
 print(s[3:])
+print(s[-3:])
+print(s[-6:-3])
