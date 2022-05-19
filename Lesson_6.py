@@ -18,10 +18,11 @@ equal_to_zero = a == 0
 denominator_is_zero = (a + c) == 0
 
 def is_zero(number):
-    if number == 0:
-        return True
-    else:
-        return False
+    return number == 0
+ #   if number == 0:
+ #      return True
+ #  else:
+ #       return False
 
 if (a + c) != 0:
     result = b / (a + c)
@@ -39,12 +40,22 @@ else:
 
 #************************************
 
-year_of_birth = 1942
+year_of_birth = 1999
 
-if year_of_birth >= 1981 and year_of_birth <= 2000:
+def is_millenial(year_of_birth):
+    return 1981 <= year_of_birth >= 2000
+
+if is_millenial(year_of_birth):
     pretty_print("I'm Millenial")
 else:
     pretty_print("I'm not Millenial")
+
+#    if year_of_birth >= 1981 and year_of_birth <= 2000:
+#        pretty_print("I'm Millenial")
+#        return True
+#    else:
+#        pretty_print("I'm not Millenial")
+#        return False
 
 #************************************
 
@@ -54,3 +65,18 @@ if 'h' in s1 or 'x' in s1:
     pretty_print('h/H inside')
 else:
     pretty_print('h/H not inside')
+
+#****************************************
+
+def is_leap_year(year):
+    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+
+print(is_leap_year(2017))
+
+#*****************************************
+
+name = input("Enter your name: ")
+print(name, type(name))
+
+age = int(input("Enter your age: "))
+print(age, type(age))
