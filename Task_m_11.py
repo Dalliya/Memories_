@@ -13,5 +13,5 @@ def triangle_square_and_perimeter(a, b):
     P = a + b + math.sqrt(a**2 + b**2)
     return(S, P)
 
-result = triangle_square_and_perimeter(a, b)
-print(result)
+S, P = triangle_square_and_perimeter(a, b)
+print("Square of triangle: ", S, "Perimetr of triangle: ", P)
