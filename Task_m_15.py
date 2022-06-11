@@ -17,7 +17,7 @@ def circles_intersect(x1, y1, r1, x2, y2, r2):
 
 #    if d == math.fabs(r1 - r2):
 #       return True #Окружности соприкасаются в одной точке
-
+#
 #    if d == math.fabs(r1 + r2):
 #        return True #Окружности соприкасаются в одной точке
 
