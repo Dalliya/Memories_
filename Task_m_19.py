@@ -13,13 +13,14 @@ def diff_min_max(num_limit, lower_bound, upper_bound):
     for i in range(num_limit):
         rand_num = random.randint(lower_bound, upper_bound)
         print(rand_num)
-        lst = []
-        lst += lst.append(rand_num)
-        print(lst)
+    lst = []
+#   lst += lst.append(rand_num)
+    print(lst)
     diff = max(lst) - min(lst)
     return diff
 
 print(diff_min_max(num_limit, lower_bound, upper_bound))
+
 
 
 
