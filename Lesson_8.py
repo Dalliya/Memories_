@@ -46,17 +46,36 @@ while True:
     user_choice = input("Сделай свой выбор ('q' - выход): ")
 
     if user_choice == 'q':
+        print('Пока!')
         break
+
+    valid_user_choice = user_choice.isnumeric() and 1 <= int(user_choice) <= 3
+    if not valid_user_choice:
+        print('Неверный ввод. Повторите свой выбор [1..3].')
+        continue
 
     if user_choice == '1':
         print('Лошадку жалко')
 
-    if user_choice == '2':
+    elif user_choice == '2':
         print('Поздравляю с полцарством!')
 
-    if user_choice == '3':
+    elif user_choice == '3':
         print('Вторые полцарства нашел!')
 
+#####################################################
 
+# Lists:
+
+lst = [1, 2, 3]
+print(type(lst))
+print(lst)
+
+print(lst[0])
+print(lst[1])
+print(lst[2])
+
+lst[0] = 42
+print(lst)
 
 
