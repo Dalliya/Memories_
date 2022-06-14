@@ -78,4 +78,37 @@ print(lst[2])
 lst[0] = 42
 print(lst)
 
+#####################################################
+print('********************************************')
+
+lst_1 = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+lst_2 = ['aaa', 'bbb', 'ccc']
+
+print(type(lst_1), type(lst_2))
+print(lst_1)
+print(len(lst_1), len(lst_2))
+
+
+print("Elem #1: ", lst_1[0])
+print("Elem #2: ", lst_1[1])
+print("Elem #3: ", lst_1[2])
+
+lst_1[0] = 42
+print(lst)
+
+def multiply_lst_by_n(lst_1, n):
+    for i in range(len(lst_1)):
+        print('Element #%d:' % i, lst_1[i])
+        lst_1[i] *= n
+
+def pretty_print_lst(lst_1):
+    print('*****List*****')
+    for elem in lst_1:
+        print('Elem: ', elem)
+
+multiply_lst_by_n(lst_1, 25)
+pretty_print_lst(lst_1)
+
+
+
 
