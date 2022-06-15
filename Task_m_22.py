@@ -15,17 +15,19 @@ while True:
         print('Возвращайся, когда будешь соблюдать правила игры! Пока:) ')
         break
 
-    if user_choice > program_choice:
-        print('Правильное число меньше, чем то, что ты ввел. Попытайся еще раз:) ')
-        continue
-
-    if user_choice < program_choice:
-        print('Правильное число больше, чем то, что ты ввел. Попытайся еще раз:)')
-        continue
-
-    elif user_choice == program_choice:
+    if user_choice == program_choice:
         print('Ты наконец-то угадал! Тебя ждет сюрприз:)')
         break
+
+    elif user_choice > program_choice:
+        print('Правильное число меньше, чем то, что ты ввел. Попытайся еще раз:) ')
+
+
+    elif user_choice < program_choice:
+        print('Правильное число больше, чем то, что ты ввел. Попытайся еще раз:)')
+
+
+
 
 
 
