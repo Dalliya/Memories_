@@ -11,3 +11,16 @@
 
 
 def chess_reward():
+    total_number_of_corns = 2 ** 64 - 1
+    cells = []
+    for i in range(64):
+        cells.append(2 ** i)
+    print(cells)
+
+    if cells[i] > 1000000:
+        return (cells.index(16777216) + 1), total_number_of_corns
+
+print(chess_reward())
+
+
+
