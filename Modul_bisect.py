@@ -6,6 +6,6 @@ def contains(l, elem):
         return l[index] == elem
     return False
 
-print(contains(list(range(1000)), -10))
+print(contains(list(range(1000)), 10))
 
 
