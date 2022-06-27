@@ -19,7 +19,7 @@ def chess_reward():
 
     index = bisect_left(cells, 1000000)
     if index < len(cells):
-        return index + 1, total_number_of_corns
+        return index + 1, cells[index], total_number_of_corns
 
 print(chess_reward())
 
