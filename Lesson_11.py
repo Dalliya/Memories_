@@ -16,5 +16,20 @@ def calc_pi():
 avr_pi = sum(calc_pi() for _ in range(1000)) / 1000
 print(avr_pi)
 
+print("*****************************************************************")
+
+#Сортировка списков
+
+lst = [2, 1, 3]
+lst.sort()
+print(lst)
+
+lst = ['aba', 'b', 'aaa', 'cc']
+lst.sort()
+print(lst)
+
+lst.sort(reverse=True)
+print(lst)
+
 
 
