@@ -117,13 +117,37 @@ def print_ranks(group):
     print('\n\n--- Students Ranks ---')
     for i in range(len(group)):
         lst = group[i][1].split(',')
-        print(lst)
 
-def print_top_n(students_rank, n):
-    pass
+#        print(sum(int(lst[i]) for i in range(len(lst))))
+#        print(sum(int(elem) for elem in lst))
+
+#        print('BEFORE:', lst)
+        for j in range(len(lst)):
+            lst[j] = int(lst[j])
+#        print('AFTER:', lst)
+#        print(sum(lst))
+        group[i][1] = sum(lst)
+        print(group[i][0], group[i][1])
+
+def print_top_unique_n(group, n=3):
+    print('\n\n--- Top Students Ranks ---')
+    group.sort(key=lambda elem: elem[1], reverse=True)
+    num_unique_elems = 0
+    prev_elem = -1
+    for elem in group[:n]:
+        if prev_elem != elem[1]:
+            num_unique_elems += 1
+        prev_elem = elem[1]
+        print(elem[0], elem[1])
+        if num_unique_elems == n:
+            break
+
+#    print(group)
 
 
 
 print_full_names(group)
 print_full_names_sorted(group)
 print_ranks(group)
+students = group
+print_top_unique_n(group=students)
