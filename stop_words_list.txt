@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 the 
 he 
 to 
@@ -32,3 +33,38 @@ he’d
 just
 looked
 any
+=======
+the 
+he 
+to 
+it 
+a 
+was 
+and 
+in
+of
+on
+about
+his
+had
+that
+out
+for
+at
+one
+him
+with
+off
+been
+stood
+over
+only
+used
+what
+bypass
+have
+he’d
+just
+looked
+any
+>>>>>>> origin/master
