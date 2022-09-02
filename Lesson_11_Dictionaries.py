@@ -36,8 +36,12 @@ products = {}
 products['BMW'] = ['X1', 'X5', 'X6']
 products['Audi'] = ['A1', 'A8']
 products['L\'Oreal'] = ['Product1', 'Product2']
+products['BMW'].append('Mini')
 
 pprint.pprint(products)
+
+print(products['BMW']) # == по функции == print(products.get('BMW'))
+print(products.get('BMW'))
 
 
 #add product
