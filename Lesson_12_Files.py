@@ -22,10 +22,16 @@ def words_count(path_to_file, path_to_stop_words, top_n = 10):
         #или
         if word not in stop_word_list: #если слово не в списке stop_word_list, то начинаем цикл
             if word: #если слово не пустое
-                if word in word_count:#если слово находится в словаре
-                    word_count[word] += 1 #значение ассоциированное со словом увеличиваем на 1
-                else:
-                    word_count[word] = 1
+                word_count[word] = word_count.get(word, 0) + 1 #возврат 0, если значения позаданному ключу word нет
+
+
+                #if word in word_count:#если слово находится в словаре
+                #    word_count[word] += 1 #значение ассоциированное со словом увеличиваем на 1
+                #else:
+                #    word_count[word] = 1
+
+
+
     #pprint.pprint(word_count)#Посчитать количество повторений каждого слова в тексте
 
     for word in sorted(word_count, key=word_count.get, reverse=True)[:top_n]: #sorted()возврат отсортированного списка через функцию/ вычленение подсписка
