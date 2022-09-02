@@ -4,9 +4,9 @@
 import pprint
 
 #initialization
-dict_en_es = {'world' : 'mundo',
-              'language' : 'idioma',
-              'See you later' : 'Hasta la vista'}
+dict_en_es = {'world': 'mundo',
+              'language': 'idioma',
+              'See you later': 'Hasta la vista'}
 
 print(dict_en_es)
 print(type(dict_en_es))
@@ -16,7 +16,7 @@ print(dict_en_es['world'])
 if 'world' in dict_en_es:
     print('Found!')
 
-    capitals = {'UA' : 'Kyiv'}
+    capitals = {'UA': 'Kyiv'}
     print(capitals)
     capitals['US'] = 'Washington'
     print(capitals)
@@ -32,6 +32,8 @@ pprint.pprint(population)
 population['UA'] += 10
 pprint.pprint(population)
 
+print('***************************************************************************')
+
 products = {}
 products['BMW'] = ['X1', 'X5', 'X6']
 products['Audi'] = ['A1', 'A8']
@@ -43,6 +45,9 @@ pprint.pprint(products)
 print(products['BMW']) # == по функции == print(products.get('BMW'))
 print(products.get('BMW'))
 
+print(products.get('bmw', Not found:( ))
+
+print('*****************************************************************************')
 
 #add product
 
